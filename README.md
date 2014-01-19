@@ -5,8 +5,8 @@ My configuration file and some package of vim.
 
 ###Demo
 
-![Demo](https://github.com/sophearak/myconf/blob/master/demo/demo1.png)
-![Demo](https://github.com/sophearak/myconf/blob/master/demo/demo2.png)
+![Demo](https://raw2.github.com/sophearak/myconf/master/demo/demo1.png)
+![Demo](https://raw2.github.com/sophearak/myconf/master/demo/demo2.png)
 
 Bonus
 ======
