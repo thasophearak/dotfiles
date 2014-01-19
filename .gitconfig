@@ -1,0 +1,29 @@
+[user]
+    name = sophearak
+    email = t.sophearak@gmail.com
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    remote = auto
+    ui = 1
+[alias]
+    s = status
+    d = diff
+    dc = diff --cached
+    co = checkout
+    cb = checkout -b
+    a = add
+    l = log --graph --abbrev-commit --date=relative --all
+    lp = log -p
+    p = add -p
+    c = commit
+
+[format]
+    pretty=format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an %ae>%Creset
+[branch]
+    autosetuprebase = always
+[github]
+    user = sophearak
+[core]
+    editor = vim
