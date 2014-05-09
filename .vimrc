@@ -47,4 +47,12 @@ let g:sparkupExecuteMapping='<c-e>'
 let g:sparkupNextMapping='<c-n>'
 
 let g:EasyMotion_leader_key = '<Leader>'
+let g:mustache_abbreviations = 1
 
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1 
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
