@@ -13,6 +13,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'terryma/vim-multiple-cursors'
 
 Plug 'fatih/vim-go'
 Plug 'pangloss/vim-javascript'
