@@ -1,25 +1,25 @@
-Configuration File
-======
+# Dotfiles
 
-My configuration file and some package of vim.
+Well, that's my all my dotfiles.
 
-###Demo
+## Key binding
 
-![Demo](https://raw2.github.com/sophearak/myconf/master/demo/demo1.png)
-![Demo](https://raw2.github.com/sophearak/myconf/master/demo/demo2.png)
+```
+" tmux
+" split pane vertically
+<c-a> + |
 
-Bonus
-======
+" split pane horizontally
+<c-a> + -
 
-###Package that you shouldn't miss:
-- [nerdtree](https://github.com/scrooloose/nerdtree)
-- [tcomment](https://github.com/tomtom/tcomment_vim)
-- [easymotion](https://github.com/Lokaltog/vim-easymotion)
-- [powerline](https://github.com/Lokaltog/vim-powerline)
-- [snipmate](https://github.com/garbas/vim-snipmate)
-- [snippets](https://github.com/honza/vim-snippets)
+" create new window
+<c-a> + c
 
-###License
+" switching between window
+<c-a> + window number
+```
+
+## License
 
 MIT
 
