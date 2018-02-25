@@ -1,6 +1,6 @@
 # Dotfiles
 
-Well, that's my all my dotfiles.
+Well, that's my dotfiles.
 
 ## Key binding
 
