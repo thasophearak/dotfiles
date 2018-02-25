@@ -14,6 +14,15 @@ Well, that's my dotfiles.
 <c-a> + [      # vim key binding, h,j,k,l,v,y etc. q to quit
 ```
 
+## Dependencies
+- https://github.com/neovim/neovim
+- https://github.com/robbyrussell/oh-my-zsh
+- https://github.com/dracula/zsh
+- https://github.com/pimterry/notes
+- https://github.com/ogham/exa
+- https://github.com/tmux/tmux
+- https://launchpad.net/ubuntu/+source/xclip
+
 ## License
 
 MIT
