@@ -4,8 +4,9 @@ Well, that's my dotfiles.
 
 ## Key binding
 
+> tmux - vim key binding
+
 ```
-# tmux - vim key binding
 <c-a> + |      # split pane vertically
 <c-a> + -      # split pane horizontally
 <c-a> + c      # create new window
