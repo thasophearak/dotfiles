@@ -15,6 +15,9 @@ Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'terryma/vim-multiple-cursors'
 
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+
 Plug 'fatih/vim-go'
 Plug 'pangloss/vim-javascript'
 Plug 'cespare/vim-toml'
@@ -137,6 +140,29 @@ nnoremap <F4> :CtrlP<cr>
 "----------------------------------------------
 " Add shortcut for toggling the tag bar
 nnoremap <F3> :TagbarToggle<cr>
+
+"----------------------------------------------
+" Plugin: Shougo/deoplete.nvim
+"----------------------------------------------
+if has('nvim')
+    " Enable deoplete on startup
+    let g:deoplete#enable_at_startup = 1
+endif
+
+" Disable deoplete when in multi cursor mode
+function! Multiple_cursors_before()
+    let b:deoplete_disable_auto_complete = 1
+endfunction
+
+function! Multiple_cursors_after()
+    let b:deoplete_disable_auto_complete = 0
+endfunction
+
+"----------------------------------------------
+" Plugin: zchee/deoplete-go
+"----------------------------------------------
+" Enable completing of go pointers
+let g:deoplete#sources#go#pointer = 1
 
 " Language: Go
 " Tagbar configuration for Golang

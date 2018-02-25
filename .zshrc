@@ -109,6 +109,7 @@ alias c="clear"
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+alias dot="~/.dotfiles"
 
 # List all files colorized in long format
 alias l="exa -l"
