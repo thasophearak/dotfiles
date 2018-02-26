@@ -2,12 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/thasophearak/.oh-my-zsh
+export ZSH=/home/thasophearak/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="dracula"
+ZSH_THEME="sophearak"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -110,6 +110,7 @@ alias c="clear"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dot="~/.dotfiles"
+alias src="~/go/src"
 
 # List all files colorized in long format
 alias l="exa -l"
