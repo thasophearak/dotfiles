@@ -127,7 +127,7 @@ let g:NERDTrimTrailingWhitespace = 1
 "----------------------------------------------
 " NERDTree
 "----------------------------------------------
-nnoremap <F2> :NERDTreeToggle<cr>
+nnoremap <F1> :NERDTreeToggle<cr>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "----------------------------------------------
@@ -135,13 +135,14 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "----------------------------------------------
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-nnoremap <F4> :CtrlP<cr>
+nnoremap <F2> :CtrlP<cr>
+nnoremap <F3> :CtrlPBuffer<cr>
 
 "----------------------------------------------
 " Plugin: 'majutsushi/tagbar'
 "----------------------------------------------
 " Add shortcut for toggling the tag bar
-nnoremap <F3> :TagbarToggle<cr>
+nnoremap <F4> :TagbarToggle<cr>
 
 "----------------------------------------------
 " Plugin: Shougo/deoplete.nvim
