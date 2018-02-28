@@ -15,6 +15,7 @@ Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ryanoasis/vim-devicons'
+Plug 'mattn/emmet-vim'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
@@ -102,7 +103,7 @@ cnoreabbrev Q q
 cnoreabbrev Qall qall
 
 "----------------------------------------------
-" Vim EasyAlign
+" Vim EasyAlig
 "----------------------------------------------
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
@@ -301,6 +302,14 @@ let g:neomake_go_gometalinter_maker = {
   \   '%W%f:%l::%tarning: %m'
   \ }
 " }}}
+
+"----------------------------------------------
+" emmet
+"----------------------------------------------
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+let g:user_emmet_leader_key='<C-T>'
+
 
 "----------------------------------------------
 " Language: CSS
