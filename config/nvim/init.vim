@@ -59,6 +59,7 @@ set softtabstop=2
 set tabstop=2
 set title                         " let vim set the terminal title
 set updatetime=100                " redraw the status bar often
+set foldmethod=marker
 
 " Set the leader button
 let mapleader = ','
@@ -120,8 +121,11 @@ let g:airline_symbols.maxlinenr = ''
 let g:airline_powerline_fonts = 1
 
 "----------------------------------------------
-" NERD Commenter
+" nerdcommenter
 "----------------------------------------------
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 "----------------------------------------------
@@ -137,6 +141,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 nnoremap <F2> :CtrlP<cr>
 nnoremap <F3> :CtrlPBuffer<cr>
+set wildignore+=*tmp*,*/node_modules/*
 
 "----------------------------------------------
 " Plugin: 'majutsushi/tagbar'
@@ -271,7 +276,7 @@ let g:go_metalinter_enabled = [
 " Set whether the JSON tags should be snakecase or camelcase.
 let g:go_addtags_transform = "snakecase"
 
-" neomake configuration for Go.
+" neomake configuration for Go. {{{
 let g:neomake_go_enabled_makers = [ 'go', 'gometalinter' ]
 let g:neomake_go_gometalinter_maker = {
   \ 'args': [
@@ -295,7 +300,7 @@ let g:neomake_go_gometalinter_maker = {
   \   '%E%f:%l::%trror: %m,' .
   \   '%W%f:%l::%tarning: %m'
   \ }
-
+" }}}
 
 "----------------------------------------------
 " Language: CSS
