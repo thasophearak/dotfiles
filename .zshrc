@@ -111,6 +111,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dot="~/.dotfiles"
 alias src="~/go/src"
+alias nt="cd ~/notes"
 
 # List all files colorized in long format
 alias l="exa -l"

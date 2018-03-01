@@ -215,7 +215,7 @@ au FileType go set tabstop=4
 au FileType go nmap <F8> :GoMetaLinter<cr>
 au FileType go nmap <F9> :GoCoverageToggle -short<cr>
 au FileType go nmap <F10> :GoTest -short<cr>
-au FileType go nmap <F12> <Plug>(go-def)
+au FileType go nmap <F11> <Plug>(go-def)
 au Filetype go nmap <leader>ga <Plug>(go-alternate-edit)
 au Filetype go nmap <leader>gah <Plug>(go-alternate-split)
 au Filetype go nmap <leader>gav <Plug>(go-alternate-vertical)
@@ -225,7 +225,7 @@ au FileType go nmap <leader>gd <Plug>(go-def)
 au FileType go nmap <leader>gdv <Plug>(go-def-vertical)
 au FileType go nmap <leader>gdh <Plug>(go-def-split)
 au FileType go nmap <leader>gD <Plug>(go-doc)
-au FileType go nmap <leader>gDv <Plug>(go-doc-vertical)
+au FileType go nmap <leader>gDv <Plug>(go-doc-vertical)"
 
 " Run goimports when running gofmt
 let g:go_fmt_command = "goimports"
@@ -302,6 +302,14 @@ let g:neomake_go_gometalinter_maker = {
   \   '%W%f:%l::%tarning: %m'
   \ }
 " }}}
+
+"----------------------------------------------
+" fold
+"----------------------------------------------
+inoremap <F12> <C-O>za
+nnoremap <F12> za
+onoremap <F12> <C-C>za
+vnoremap <F12> zf
 
 "----------------------------------------------
 " emmet
