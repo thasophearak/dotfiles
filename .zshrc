@@ -96,7 +96,7 @@ export LANG=en_US.UTF-8
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-alias v='nvim'
+alias v="nvim"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -118,14 +118,17 @@ alias l="exa -l"
 alias ll="exa -la"
 
 # Git shortcut
-alias gs='git status '
-alias ga='git add '
-alias gb='git branch '
-alias gc='git commit'
-alias gd='git diff'
-alias nah='git reset --hard && git clean -xdf'
-alias gl='git log --graph --abbrev-commit --date=relative --all '
-alias gp='git push -u origin master'
+alias gs="git status"
+alias ga="git add "
+alias gb="git branch "
+alias gc="git commit"
+alias gd="git diff"
+alias nah="git reset --hard && git clean -xdf"
+alias gl="git log --graph --abbrev-commit --date=relative --all"
+alias gp="git push -u origin master"
 
-alias rmaptlock='sudo rm /var/lib/apt/lists/lock'
+alias rmaptlock="sudo rm /var/lib/apt/lists/lock"
 
+
+# Utils
+alias yt="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"

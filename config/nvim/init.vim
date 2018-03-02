@@ -16,6 +16,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ryanoasis/vim-devicons'
 Plug 'mattn/emmet-vim'
+Plug 'vimwiki/vimwiki'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
@@ -31,6 +32,8 @@ Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 syntax enable
+set nocompatible
+filetype plugin on
 
 "----------------------------------------------
 " General settings
@@ -40,13 +43,14 @@ set smartindent                   " enable smart indentation
 set autoread                      " reload file if the file changes on the disk
 set autowrite                     " write when switching buffers
 set autowriteall                  " write on :quit
-set colorcolumn=81                " highlight the 80th column as an indicator
+" set colorcolumn=81                " highlight the 80th column as an indicator
 set completeopt-=preview          " remove the horrendous preview window
 set cursorline                    " highlight the current line for thecursor
 set encoding=utf-8
 set expandtab                     " expands tabs to spaces
 set list                          " show trailing whitespace
-set listchars=tab:\|\ ,trail:▫
+set listchars=tab:\|\ ,nbsp:⋅,trail:•
+" set listchars=tab:▸\ ,eol:¬,nbsp:⋅,trail:•
 set nospell                       " disable spelling
 set noswapfile                    " disable swapfile usage
 set nowrap
@@ -61,6 +65,7 @@ set tabstop=2
 set title                         " let vim set the terminal title
 set updatetime=100                " redraw the status bar often
 set foldmethod=marker
+set guicursor=
 
 " Set the leader button
 let mapleader = ','
@@ -259,49 +264,59 @@ let g:go_list_type = "quickfix"
 let g:go_test_prepend_name = 1
 
 " gometalinter configuration
-let g:go_metalinter_command = ""
-let g:go_metalinter_deadline = "5s"
-let g:go_metalinter_enabled = [
-    \ 'deadcode',
-    \ 'errcheck',
-    \ 'gas',
-    \ 'goconst',
-    \ 'gocyclo',
-    \ 'golint',
-    \ 'gosimple',
-    \ 'ineffassign',
-    \ 'vet',
-    \ 'vetshadow'
-\]
+" let g:go_metalinter_command = ""
+" let g:go_metalinter_deadline = "5s"
+" let g:go_metalinter_enabled = [
+    " \ 'deadcode',
+    " \ 'errcheck',
+    " \ 'gas',
+    " \ 'goconst',
+    " \ 'gocyclo',
+    " \ 'golint',
+    " \ 'gosimple',
+    " \ 'ineffassign',
+    " \ 'vet',
+    " \ 'vetshadow'
+" \]
 
 " Set whether the JSON tags should be snakecase or camelcase.
 let g:go_addtags_transform = "snakecase"
 
 " neomake configuration for Go. {{{
-let g:neomake_go_enabled_makers = [ 'go', 'gometalinter' ]
-let g:neomake_go_gometalinter_maker = {
-  \ 'args': [
-  \   '--tests',
-  \   '--enable-gc',
-  \   '--concurrency=3',
-  \   '--fast',
-  \   '-D', 'aligncheck',
-  \   '-D', 'dupl',
-  \   '-D', 'gocyclo',
-  \   '-D', 'gotype',
-  \   '-E', 'errcheck',
-  \   '-E', 'misspell',
-  \   '-E', 'unused',
-  \   '%:p:h',
-  \ ],
-  \ 'append_file': 0,
-  \ 'errorformat':
-  \   '%E%f:%l:%c:%trror: %m,' .
-  \   '%W%f:%l:%c:%tarning: %m,' .
-  \   '%E%f:%l::%trror: %m,' .
-  \   '%W%f:%l::%tarning: %m'
-  \ }
+" let g:neomake_go_enabled_makers = [ 'go', 'gometalinter' ]
+" let g:neomake_go_gometalinter_maker = {
+  " \ 'args': [
+  " \   '--tests',
+  " \   '--enable-gc',
+  " \   '--concurrency=3',
+  " \   '--fast',
+  " \   '-D', 'aligncheck',
+  " \   '-D', 'dupl',
+  " \   '-D', 'gocyclo',
+  " \   '-D', 'gotype',
+  " \   '-E', 'errcheck',
+  " \   '-E', 'misspell',
+  " \   '-E', 'unused',
+  " \   '%:p:h',
+  " \ ],
+  " \ 'append_file': 0,
+  " \ 'errorformat':
+  " \   '%E%f:%l:%c:%trror: %m,' .
+  " \   '%W%f:%l:%c:%tarning: %m,' .
+  " \   '%E%f:%l::%trror: %m,' .
+  " \   '%W%f:%l::%tarning: %m'
+  " \ }
 " }}}
+
+"----------------------------------------------
+" Vim Wiki {{{
+"----------------------------------------------
+let g:vimwiki_list = [{'path': '~/Documents/wiki', 'syntax': 'markdown', 'ext': '.wiki'}]
+au FileType vimwiki set expandtab
+au FileType vimwiki set shiftwidth=2
+au FileType vimwiki set softtabstop=2
+au FileType vimwiki set tabstop=2
+"}}}
 
 "----------------------------------------------
 " fold

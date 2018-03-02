@@ -18,8 +18,6 @@ Well, that's my dotfiles.
 ## Dependencies
 - https://github.com/neovim/neovim
 - https://github.com/robbyrussell/oh-my-zsh
-- https://github.com/dracula/zsh
-- https://github.com/pimterry/notes
 - https://github.com/ogham/exa
 - https://github.com/tmux/tmux
 - https://launchpad.net/ubuntu/+source/xclip
