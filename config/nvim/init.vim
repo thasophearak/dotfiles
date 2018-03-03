@@ -27,6 +27,7 @@ Plug 'cespare/vim-toml'
 
 " Colorscheme
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'morhetz/gruvbox'
 
 " Initialize plugin system
 call plug#end()
@@ -48,9 +49,8 @@ set completeopt-=preview          " remove the horrendous preview window
 set cursorline                    " highlight the current line for thecursor
 set encoding=utf-8
 set expandtab                     " expands tabs to spaces
-set list                          " show trailing whitespace
+" set list                          " show trailing whitespace
 set listchars=tab:\|\ ,nbsp:⋅,trail:•
-" set listchars=tab:▸\ ,eol:¬,nbsp:⋅,trail:•
 set nospell                       " disable spelling
 set noswapfile                    " disable swapfile usage
 set nowrap

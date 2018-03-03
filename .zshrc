@@ -111,6 +111,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dot="~/.dotfiles"
 alias src="~/go/src"
+alias wiki="~/Documents/wiki"
 
 # List all files colorized in long format
 alias l="exa -l"
@@ -127,7 +128,6 @@ alias gl="git log --graph --abbrev-commit --date=relative --all"
 alias gp="git push -u origin master"
 
 alias rmaptlock="sudo rm /var/lib/apt/lists/lock"
-
 
 # Utils
 alias yt="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
