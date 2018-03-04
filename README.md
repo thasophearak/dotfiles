@@ -1,3 +1,5 @@
+![screenshot](https://github.com/sophearak/dotfiles/raw/master/screenshot/screenshot.png)
+
 # Dotfiles
 
 Well, that's my dotfiles.
