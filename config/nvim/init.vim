@@ -44,7 +44,7 @@ set smartindent                   " enable smart indentation
 set autoread                      " reload file if the file changes on the disk
 set autowrite                     " write when switching buffers
 set autowriteall                  " write on :quit
-" set colorcolumn=81                " highlight the 80th column as an indicator
+set colorcolumn=121               " highlight the 80th column as an indicator
 set completeopt-=preview          " remove the horrendous preview window
 set cursorline                    " highlight the current line for thecursor
 set encoding=utf-8
