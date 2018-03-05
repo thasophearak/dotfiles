@@ -163,6 +163,10 @@ if has('nvim')
     let g:deoplete#enable_at_startup = 1
 endif
 
+" Using tab/shift+tab for go through auto complete option
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 " Disable deoplete when in multi cursor mode
 function! Multiple_cursors_before()
     let b:deoplete_disable_auto_complete = 1
