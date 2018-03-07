@@ -17,6 +17,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'ryanoasis/vim-devicons'
 Plug 'mattn/emmet-vim'
 Plug 'vimwiki/vimwiki'
+Plug 'w0rp/ale'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
@@ -337,6 +338,10 @@ let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 let g:user_emmet_leader_key='<C-T>'
 
+"----------------------------------------------
+" ale
+"----------------------------------------------
+let g:ale_lint_on_text_changed = 'never'
 
 "----------------------------------------------
 " Language: CSS
