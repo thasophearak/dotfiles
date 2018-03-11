@@ -18,6 +18,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'mattn/emmet-vim'
 Plug 'vimwiki/vimwiki'
 Plug 'w0rp/ale'
+Plug 'alvan/vim-closetag'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
@@ -35,8 +36,7 @@ call plug#end()
 
 syntax enable
 set nocompatible
-filetype plugin on
-
+filetype plugin indent on
 "----------------------------------------------
 " General settings
 "----------------------------------------------
@@ -67,6 +67,8 @@ set title                         " let vim set the terminal title
 set updatetime=100                " redraw the status bar often
 set foldmethod=marker
 set guicursor=
+set laststatus=2
+
 
 " Set the leader button
 let mapleader = ','
@@ -346,6 +348,13 @@ let g:user_emmet_leader_key='<C-T>'
 let g:ale_lint_on_text_changed = 'never'
 
 "----------------------------------------------
+" fizz file type
+"----------------------------------------------
+augroup filetypedetect
+  au! BufRead,BufNewFile *.fizz		setfiletype fizz
+augroup END
+
+"----------------------------------------------
 " Language: CSS
 "----------------------------------------------
 au FileType css set expandtab
@@ -442,4 +451,12 @@ au FileType yaml set expandtab
 au FileType yaml set shiftwidth=2
 au FileType yaml set softtabstop=2
 au FileType yaml set tabstop=2
+
+"----------------------------------------------
+" Language: fizz
+"----------------------------------------------
+au FileType fizz set expandtab
+au FileType fizz set shiftwidth=4
+au FileType fizz set softtabstop=4
+au FileType fizz set tabstop=4
 
