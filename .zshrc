@@ -123,7 +123,7 @@ alias ga="git add "
 alias gb="git branch "
 alias gc="git commit"
 alias gd="git diff"
-alias nah="git reset --hard && git clean -xdf"
+alias nah="git reset --hard"
 alias gl="git log --graph --abbrev-commit --date=relative --all"
 alias gp="git push -u origin master"
 
@@ -131,3 +131,7 @@ alias rmaptlock="sudo rm /var/lib/apt/lists/lock"
 
 # Utils
 alias yt="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
+
+# Adonis
+alias adev="adonis serve --dev"
+alias a="adonis"

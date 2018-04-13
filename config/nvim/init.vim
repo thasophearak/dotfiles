@@ -347,12 +347,6 @@ let g:user_emmet_leader_key='<C-T>'
 "----------------------------------------------
 let g:ale_lint_on_text_changed = 'never'
 
-"----------------------------------------------
-" fizz file type
-"----------------------------------------------
-augroup filetypedetect
-  au! BufRead,BufNewFile *.fizz		setfiletype fizz
-augroup END
 
 "----------------------------------------------
 " Language: CSS
