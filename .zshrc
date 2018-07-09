@@ -94,7 +94,7 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:$HOME/.config/composer/vendor/bin
 
 alias v="nvim"
 
@@ -131,7 +131,13 @@ alias rmaptlock="sudo rm /var/lib/apt/lists/lock"
 
 # Utils
 alias yt="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4"
+alias mp3="youtube-dl --extract-audio --audio-format mp3"
 
 # Adonis
 alias adev="adonis serve --dev"
 alias a="adonis"
+
+alias postman="~/App/Postman/Postman"
+
+alias ng="/usr/bin/ng"
+
